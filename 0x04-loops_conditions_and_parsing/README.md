@@ -1,0 +1,1 @@
+Loops comdition and parsing
