@@ -5,7 +5,7 @@
 #include <unistd.h>
 
 /**
- * The infinite_while runs an infinite while loop.
+ * infinite_while - function that runs an infinite while loop.
  *
  * Return: Always 0.
  */
@@ -19,7 +19,7 @@ int infinite_while(void)
 }
 
 /**
- * The main function creates five zombie processes.
+ * main - function creates five zombie processes.
  *
  * Return: Always 0.
  */
