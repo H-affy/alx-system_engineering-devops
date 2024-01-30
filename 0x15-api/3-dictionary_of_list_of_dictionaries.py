@@ -4,6 +4,7 @@
 import requests
 import json
 
+
 def fetch_user_data():
     """To export all users information and to-do list for all employee"""
     url = "https://jsonplaceholder.typicode.com/"
@@ -14,10 +15,10 @@ def fetch_user_data():
     for user in users:
         user_id = user["id"]
 
-        todo_res  = requests.get(url + f"todos?userId={user_id}")
+        todo_res = requests.get(url + f"todos?userId={user_id}")
         todo_list = todo_res.json()
 
-        data_export [user_id] = []
+        data_export[user_id] = []
 
         for todo in todo_list:
             task_info = {
